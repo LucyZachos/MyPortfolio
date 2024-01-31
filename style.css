@@ -1,0 +1,68 @@
+h1 {
+  font-size: 32px;
+}
+h2 {
+  font-size: 22px;
+}
+h3 {
+  font-size: 12px;
+}
+
+h4 {
+  font-size: 5px;
+}
+
+label {
+  font-size: 15px;
+}
+
+body {
+  background: #f9f9f9;
+  padding-top: 30px;
+  font-family: "Cutive Mono", monospace;
+  color: #000;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  background-color: #f9f9f9;
+  left: 0;
+  right: 0;
+  font-weight: normal;
+}
+
+.navbar li {
+  display: inline-block;
+  list-style: none;
+  padding: 0 40px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #000;
+  transition: 0.3s ease;
+}
+
+.hero {
+  padding: 20px;
+  border-bottom: 1px solid #c7c7c7;
+}
+
+.hero h1 {
+  font-size: 20px;
+}
+.hero h2 {
+  font-size: 30px;
+}
+.hero h2 {
+  font-size: 30px;
+}
+.hero h3 {
+  font-size: 15px;
+}
