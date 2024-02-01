@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 h1 {
   font-size: 32px;
 }
@@ -18,7 +21,7 @@ label {
 
 body {
   background: #f9f9f9;
-  padding-top: 30px;
+  padding-top: 50px;
   font-family: "Cutive Mono", monospace;
   color: #000;
   margin: 0;
@@ -31,6 +34,8 @@ img {
 }
 
 .navbar {
+  display: flex;
+  justify-content: space-evenly;
   overflow: hidden;
   position: fixed;
   z-index: 1;
@@ -43,6 +48,7 @@ img {
   justify-content: right;
   text-align: right;
   font-size: 20px;
+  height: 60px;
 }
 
 .navbar li {
@@ -58,8 +64,23 @@ img {
   transition: 0.3s ease;
 }
 
+.navbar li a:hover {
+  background-color: #c2d3e1;
+  border-radius: 20px;
+  padding: 15px;
+  transition: 0.3s ease;
+}
+.navbar .logo {
+  justify-content: left;
+  align-items: left;
+  padding-right: 650px;
+}
+.navbar img {
+  display: block;
+}
 .hero {
-  padding: 20px;
+  padding: 40px;
+  margin-top: 20px;
   margin-left: 100px;
   margin-right: 100px;
   display: flex;
@@ -68,19 +89,15 @@ img {
 }
 
 .hero h1 {
-  font-size: 60px;
+  font-size: 50px;
 }
 .hero h2 {
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 28px;
+  line-height: 28px;
 }
 
 .hero h3 {
   font-size: 15px;
-}
-.logo {
-  justify-content: right;
-  text-align: right;
 }
 .header_text {
   padding-top: 100px;
@@ -92,7 +109,7 @@ img {
   border-right: 1px solid;
   width: 0;
   animation: typing;
-  animation: typing 2s steps(30, end) forwards, blinking 1s infinite;
+  animation: typing 4s steps(30, end) forwards, blinking 1s infinite;
 }
 @keyframes typing {
   from {
@@ -116,7 +133,7 @@ img {
 
 .about {
   background-color: #c2d3e1;
-  height: 450px;
+  height: 720px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .about_header {
@@ -126,7 +143,7 @@ img {
 
 .about_header h3 {
   text-align: center;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .about_text {
@@ -144,13 +161,20 @@ img {
   font-size: 20px;
 }
 
+.skills {
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
 .skills_header {
   padding-top: 30px;
+  padding-bottom: 60px;
   text-align: center;
 }
 .skills_header h3 {
   text-align: center;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .skills_text {
@@ -164,8 +188,8 @@ img {
   gap: 10px;
 }
 .skill_graph_c {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   background-color: #c2d3e1;
   border: 1px solid #d3d3d3;
   position: relative;
@@ -188,7 +212,7 @@ img {
   position: absolute;
   transition: scale(1);
   transform: translateY(100%) rotate(180) scale(1);
-  transition: transform 2.5s ease-in-out;
+  transition: transform 2s ease-in-out;
   animation: animate 15s ease-in infinite;
 }
 .skill_graph_c::after {
@@ -202,15 +226,15 @@ img {
   position: absolute;
   width: 100%;
   height: 100%;
-  transition: transform 2.5s ease-in-out;
+  transition: transform 2s ease-in-out;
 }
 .skill_graph_c:hover::after {
   transform: translateY(-60%) rotate(0) scale(1);
 }
 
 .skill_graph_java {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   background-color: #c2d3e1;
   border: 1px solid #d3d3d3;
   position: relative;
@@ -233,7 +257,7 @@ img {
   position: absolute;
   transition: scale(1);
   transform: translateY(100%) rotate(180) scale(1);
-  transition: transform 2.5s ease-in-out;
+  transition: transform 2s ease-in-out;
   animation: animate 15s ease-in infinite;
 }
 .skill_graph_java::after {
@@ -247,15 +271,15 @@ img {
   position: absolute;
   width: 100%;
   height: 100%;
-  transition: transform 2.5s ease-in-out;
+  transition: transform 2s ease-in-out;
 }
 .skill_graph_java:hover::after {
   transform: translateY(-70%) rotate(0) scale(1);
 }
 
 .skill_graph_html {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   background-color: #c2d3e1;
   border: 1px solid #d3d3d3;
   position: relative;
@@ -278,7 +302,7 @@ img {
   position: absolute;
   transition: scale(1);
   transform: translateY(100%) rotate(180) scale(1);
-  transition: transform 2.5s ease-in-out;
+  transition: transform 2s ease-in-out;
   animation: animate 15s ease-in infinite;
 }
 .skill_graph_html::after {
@@ -292,15 +316,15 @@ img {
   position: absolute;
   width: 100%;
   height: 100%;
-  transition: transform 2.5s ease-in-out;
+  transition: transform 2s ease-in-out;
 }
 .skill_graph_html:hover::after {
   transform: translateY(-85%) rotate(0) scale(1);
 }
 
 .skill_graph_css {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   background-color: #c2d3e1;
   border: 1px solid #d3d3d3;
   position: relative;
@@ -323,7 +347,7 @@ img {
   position: absolute;
   transition: scale(1);
   transform: translateY(100%) rotate(180) scale(1);
-  transition: transform 2.5s ease-in-out;
+  transition: transform 2s ease-in-out;
   animation: animate 15s ease-in infinite;
 }
 .skill_graph_css::after {
@@ -337,15 +361,15 @@ img {
   position: absolute;
   width: 100%;
   height: 100%;
-  transition: transform 2.5s ease-in-out;
+  transition: transform 2s ease-in-out;
 }
 .skill_graph_css:hover::after {
   transform: translateY(-85%) rotate(0) scale(1);
 }
 
 .skill_graph_js {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   background-color: #c2d3e1;
   border: 1px solid #d3d3d3;
   position: relative;
@@ -368,7 +392,7 @@ img {
   position: absolute;
   transition: scale(1);
   transform: translateY(100%) rotate(180) scale(1);
-  transition: transform 2.5s ease-in-out;
+  transition: transform 2s ease-in-out;
   animation: animate 15s ease-in infinite;
 }
 .skill_graph_js::after {
@@ -382,15 +406,15 @@ img {
   position: absolute;
   width: 100%;
   height: 100%;
-  transition: transform 2.5s ease-in-out;
+  transition: transform 2s ease-in-out;
 }
 .skill_graph_js:hover::after {
   transform: translateY(-70%) rotate(0) scale(1);
 }
 
 .skill_graph_sql {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   background-color: #c2d3e1;
   border: 1px solid #d3d3d3;
   position: relative;
@@ -413,7 +437,7 @@ img {
   position: absolute;
   transition: scale(1);
   transform: translateY(100%) rotate(180) scale(1);
-  transition: transform 2.5s ease-in-out;
+  transition: transform 2s ease-in-out;
   animation: animate 15s ease-in infinite;
 }
 .skill_graph_sql::after {
@@ -427,15 +451,15 @@ img {
   position: absolute;
   width: 100%;
   height: 100%;
-  transition: transform 2.5s ease-in-out;
+  transition: transform 2s ease-in-out;
 }
 .skill_graph_sql:hover::after {
   transform: translateY(-70%) rotate(0) scale(1);
 }
 
 .skill_graph_php {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   background-color: #c2d3e1;
   border: 1px solid #d3d3d3;
   position: relative;
@@ -458,7 +482,7 @@ img {
   position: absolute;
   transition: scale(1);
   transform: translateY(100%) rotate(180) scale(1);
-  transition: transform 2.5s ease-in-out;
+  transition: transform 2s ease-in-out;
   animation: animate 15s ease-in infinite;
 }
 .skill_graph_php::after {
@@ -472,7 +496,7 @@ img {
   position: absolute;
   width: 100%;
   height: 100%;
-  transition: transform 2.5s ease-in-out;
+  transition: transform 2s ease-in-out;
 }
 .skill_graph_php:hover::after {
   transform: translateY(-85%) rotate(0) scale(1);
@@ -487,4 +511,37 @@ img {
   0% {
     transform: translateY(0) rotate(180) scale(1);
   }
+}
+
+.portfolio {
+  background-color: #c2d3e1;
+  height: 550px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.portfolio_header {
+  padding-top: 30px;
+  text-align: center;
+}
+.portfolio_header h3 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.footer {
+  display: flex;
+  height: 80px;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding-top: 30px;
+  margin: 25px;
+  font-size: 20px;
+}
+
+.footer i {
+  color: #c2d3e1;
+}
+
+.tools {
+  margin-top: 0;
 }

@@ -7,22 +7,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/9d09fcb341.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Lucinda Zachos Portfolio</title>
 </head>
 <body>
     <div class="navbar">
+        <div>
+            <a href="#home"><img src="logo.png" style="width: 40px; height: 40px;" alt="Logo"/></a>
+        </div>
+
         <ul>
-            <li><a id="index" href="index.php">Home</a></li>
-            <li><a id="about me" href="about.html">About Me</a></li>
-            <li><a id="skills" href="skills.php">Skills</a></li>
-            <li><a id="portfolio" href="portfolio.html">Portfolio</a></li>
+            <li class="logo">
+            </li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
             <li><a id="contact" href="contact.php">Contact Me</a></li>
         </ul>
     </div>
 
-    <section>
+    <section id="home">
         <div class="hero">
             <div class="header_text">
                 <h1>Hello, I'm Lucinda</h1>
@@ -36,84 +42,106 @@
         </div>
     </section>
 
-    <section>
+    <section id="about">
         <div class="about">
             <div class="about_header">
-                <h3><u>About me</u></h3>
+                <h3><u>ABOUT ME</u></h3>
             </div>
             <div class="about_text">
                 <p>
-                    I'm a dedicated and creative web developer and designer with a fresh BSc IT (SE) degree from Eduvos. 
-                    I specialize in crafting immersive digital experiences that seamlessly blend functionality and aesthetics.
-                    My academic journey includes not only a solid foundation in software engineering but also a National Higher Certificate in Information Systems Software Development, 
-                    and a National Certificate in Financial Accounting. Being recognized for my academic achievements, 
-                    I am proud to have been invited to join the prestigious Golden Key International Honour Society.
+                    Greetings! I'm Lucinda, a results-driven web developer and designer equipped with a Bachelor of Science in Information Technology, 
+                    majoring in software engineering based in South Africa. 
+                    My academic journey also includes earning a National Higher Certificate in Information Systems Software Development, 
+                    and I am honored to be a member of the prestigious Golden Key International Honour Society.
+
+                </p>
+                
+                <p>
+                    With a strong foundation in software engineering, I specialize in crafting immersive digital experiences that seamlessly blend functionality 
+                    and aesthetics. 
+                    My focus is on delivering excellence as I embark on an exciting freelancing journey, 
+                    bringing a unique mix of technical expertise and creative flair to each project.
+                    
+                <p>
+                    In this dynamic world of technology, I am committed to continuous learning, staying abreast of the latest industry trends, 
+                    and mastering new tools and frameworks. I thrive on the excitement of personal and professional growth.
+                </p>
+
+                <p>
+                    I'm open to collaboration, freelance opportunities, and networking with like-minded professionals. 
+                    Feel free to explore my Github page, connect with me on LinkedIn, or email me and let's discuss potential projects or opportunities. 
+                    Let's create something exceptional together!
                 </p>
             </div>
         </div>
     </section>
 
-    <section>
+    <section id="skills">
         <div class="skills">
             <div class="skills_header">
-                <h3><u>My skills</u></h3>
+                <h3><u>MY SKILLSET</u></h3>
             </div>
             <div class="skills_text">
-                <div class="skill_graph_c">
+                <div class="skill_graph_c"></div>
 
-                </div>
+                <div class="skill_graph_java"></div>
 
-                <div class="skill_graph_java">
+                <div class="skill_graph_html"></div>
 
-                </div>
+                <div class="skill_graph_css"></div>
 
-                <div class="skill_graph_html">
+                <div class="skill_graph_js"></div>
 
-                </div>
+                <div class="skill_graph_sql"></div>
 
-                <div class="skill_graph_css">
+                <div class="skill_graph_php"></div>
+            </div>
+        </div>
 
-                </div>
-
-                <div class="skill_graph_js">
-
-                </div>
-
-                <div class="skill_graph_sql">
-
-                </div>
-
-                <div class="skill_graph_php">
-
-                </div>
+        <div class="tools">
+            <div class="skills_header">
+                <h3><u>MY TOOLKIT</u></h3>
             </div>
         </div>
 
     </section>
 
-    <section>
-        <h3>My portfolio</h3>
+
+    <section id="portfolio">
+        <div class="portfolio">
+            <div class="portfolio_header">
+                <h3><u>MY PORTFOLIO</u></h3>
+            </div>
+
+        </div>
+
         <p>
 
         </p>
     </section>
 
-    <section>
-        <h1>Contact me</h1>
-
-        <div>
-            <label>Email</label>
-            <p>lucindazachos@gmail.com</p>
+<footer>
+    <div class="footer">
+        <div class="linkedin">
+            <i class="fa-brands fa-linkedin"></i>
+            <label>https://www.linkedin.com/in/lucindazachos</label>    
         </div>
-        <div>
-            <label>Phone</label>
-            <p>071 878 3138</p>
+        
+        <div class="github">
+            <i class="fa-brands fa-github"></i>
+            <label>https://github.com/LucyZachos</label>
         </div>
-        <div>
-            <label>Location</label>
-            <p>Gauteng, South Africa</p>
-        </div>  
-    </section>
 
+        <div class="email">
+            <i class="fa-solid fa-envelope"></i>
+            <label>lucindazachos@gmail.com</label>
+        </div>
+
+        <div class="location">
+            <i class="fa-solid fa-location-dot"></i>
+            <label>Gauteng, South Africa</label>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
