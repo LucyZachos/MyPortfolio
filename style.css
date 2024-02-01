@@ -25,12 +25,16 @@ body {
   font-family: "Cutive Mono", monospace;
   color: #000;
   margin: 0;
+  box-sizing: border-box;
 }
 
 img {
   padding: 20px;
   width: 450px;
   height: 450px;
+}
+button {
+  font-family: "Cutive Mono", monospace;
 }
 
 .navbar {
@@ -185,7 +189,8 @@ img {
   text-align: justify;
   margin-left: auto;
   margin-right: auto;
-  gap: 10px;
+  gap: 20px;
+  padding-bottom: 30px;
 }
 .skill_graph_c {
   width: 150px;
@@ -544,4 +549,119 @@ img {
 
 .tools {
   margin-top: 0;
+}
+
+.card_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card_front {
+  width: 300px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+
+.card_front img {
+  width: 100%;
+  height: 150px;
+  border: 1px solid #c2d3e1;
+  padding: 0;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.card_content {
+  padding: 16px;
+}
+
+.card_content h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.card_content p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+.card_content .btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #c2d3e1;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 16px;
+  color: #000;
+  border: none;
+}
+
+.card_content .btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid #c2d3e1;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: #fff;
+  width: 500px;
+  max-width: 80%;
+}
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal_header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal_header h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.modal_header .close_btn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.modal_body {
+  padding: 10px 15px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
 }
