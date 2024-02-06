@@ -40,6 +40,7 @@ button {
 .navbar {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   overflow: hidden;
   position: fixed;
   z-index: 1;
@@ -53,6 +54,7 @@ button {
   text-align: right;
   font-size: 20px;
   height: 60px;
+  padding: 0 20px;
 }
 
 .navbar li {
@@ -77,10 +79,11 @@ button {
 .navbar .logo {
   justify-content: left;
   align-items: left;
-  padding-right: 650px;
+  padding-right: 500px;
 }
 .navbar img {
   display: block;
+  margin-right: 20px;
 }
 .hero {
   padding: 40px;
@@ -105,6 +108,19 @@ button {
 }
 .header_text {
   padding-top: 100px;
+}
+
+.download-link {
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s ease;
+}
+
+.download-link:hover {
+  background-color: #c2d3e1;
+  border-radius: 20px;
+  padding: 10px; /* Add padding for better appearance on hover */
+  transition: background-color 0.3s ease;
 }
 
 .typed {
@@ -474,7 +490,7 @@ button {
 }
 
 .skill_graph_php::before {
-  content: "85%";
+  content: "75%";
   display: flex;
   font-size: 25px;
   color: #ffff;
@@ -504,7 +520,7 @@ button {
   transition: transform 2s ease-in-out;
 }
 .skill_graph_php:hover::after {
-  transform: translateY(-85%) rotate(0) scale(1);
+  transform: translateY(-75%) rotate(0) scale(1);
 }
 @keyframes animate {
   100% {
