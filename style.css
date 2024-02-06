@@ -79,12 +79,26 @@ button {
 .navbar .logo {
   justify-content: left;
   align-items: left;
-  padding-right: 500px;
+  padding-right: 450px;
 }
 .navbar img {
   display: block;
   margin-right: 20px;
 }
+
+.download-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+.download-link:hover {
+  background-color: #c2d3e1;
+  border-radius: 20px;
+  padding: 15px;
+  transition: background-color 0.3s ease;
+}
+
 .hero {
   padding: 40px;
   margin-top: 20px;
@@ -108,19 +122,6 @@ button {
 }
 .header_text {
   padding-top: 100px;
-}
-
-.download-link {
-  text-decoration: none;
-  color: #000;
-  transition: 0.3s ease;
-}
-
-.download-link:hover {
-  background-color: #c2d3e1;
-  border-radius: 20px;
-  padding: 10px; /* Add padding for better appearance on hover */
-  transition: background-color 0.3s ease;
 }
 
 .typed {
