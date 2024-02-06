@@ -1,3 +1,4 @@
+/*#region Global*/
 html {
   scroll-behavior: smooth;
 }
@@ -37,6 +38,9 @@ button {
   font-family: "Cutive Mono", monospace;
 }
 
+/*#endregion Global*/
+
+/*#region navbar*/
 .navbar {
   display: flex;
   justify-content: space-evenly;
@@ -99,6 +103,9 @@ button {
   transition: background-color 0.3s ease;
 }
 
+/*#endregion navbar*/
+
+/*#region hero*/
 .hero {
   padding: 40px;
   margin-top: 20px;
@@ -152,6 +159,9 @@ button {
   }
 }
 
+/*#endregion hero*/
+
+/*#region about*/
 .about {
   background-color: #c2d3e1;
   height: 720px;
@@ -182,6 +192,9 @@ button {
   font-size: 20px;
 }
 
+/*#endregion about*/
+
+/*#region skills*/
 .skills {
   justify-content: center;
   align-items: center;
@@ -535,6 +548,8 @@ button {
   }
 }
 
+/*#endregion skills*/
+
 .portfolio {
   background-color: #c2d3e1;
   height: 550px;
@@ -689,4 +704,389 @@ button {
 #contactModal .modal_body a {
   text-decoration: none;
   color: blue;
+}
+
+@media screen and (max-width: 1300px) {
+  body {
+    padding-top: 100px;
+  }
+
+  .navbar {
+    padding: 0 10px;
+  }
+
+  .navbar li {
+    padding: 0 20px;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero h2 {
+    font-size: 18px;
+  }
+
+  .hero img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .about {
+    height: 800px;
+  }
+
+  .about_text {
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto;
+  }
+
+  .skills_text {
+    margin: 0 auto;
+  }
+
+  .portfolio {
+    height: 950px;
+  }
+
+  .card_container {
+    justify-content: center;
+  }
+
+  .card_front {
+    width: 80%;
+    margin: 20px 0;
+  }
+
+  .footer {
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+    margin: 0;
+  }
+
+  .footer i {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  body {
+    padding-top: 100px;
+  }
+
+  .navbar {
+    padding: 0 10px;
+  }
+
+  .navbar li {
+    padding: 0 20px;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero h2 {
+    font-size: 18px;
+  }
+
+  .hero img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .about {
+    height: 800px;
+  }
+
+  .about_text {
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto;
+  }
+
+  .skills_text {
+    margin: 0 auto;
+  }
+
+  .portfolio {
+    height: 950px;
+  }
+
+  .card_container {
+    justify-content: center;
+  }
+
+  .card_front {
+    width: 80%;
+    margin: 20px 0;
+  }
+
+  .footer {
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+    margin: 0;
+  }
+
+  .footer i {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding-top: 100px;
+  }
+
+  .navbar {
+    padding: 0 5px;
+  }
+
+  .navbar li {
+    padding: 0 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .hero h1 {
+    font-size: 18px;
+  }
+
+  .hero h2 {
+    font-size: 12px;
+    /* text-align: center;
+    word-wrap: break-word; */
+  }
+
+  .hero img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .about {
+    height: 700px;
+  }
+
+  .about_text {
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto;
+  }
+
+  .about_text p {
+    font-size: 15px;
+  }
+
+  .skills_text {
+    margin: 0 auto;
+  }
+
+  .skill_graph_c {
+    width: 120px;
+    height: 120px;
+  }
+
+  .skill_graph_java {
+    width: 120px;
+    height: 120px;
+  }
+
+  .skill_graph_html {
+    width: 120px;
+    height: 120px;
+  }
+
+  .skill_graph_js {
+    width: 120px;
+    height: 120px;
+  }
+
+  .skill_graph_sql {
+    width: 120px;
+    height: 120px;
+  }
+  .skill_graph_css {
+    width: 120px;
+    height: 120px;
+  }
+
+  .skill_graph_php {
+    width: 120px;
+    height: 120px;
+  }
+
+  .portfolio {
+    height: 950px;
+  }
+
+  .card_container {
+    justify-content: center;
+  }
+
+  .card_front {
+    width: 80%;
+    margin: 20px 0;
+  }
+
+  .footer {
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+    margin: 0;
+  }
+
+  .footer i {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  body {
+    padding-top: 100px;
+  }
+
+  .navbar {
+    padding: 0 5px;
+  }
+
+  .navbar li {
+    padding: 0 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+  .header_text {
+    padding-top: 0;
+  }
+
+  .hero h1 {
+    font-size: 18px;
+  }
+
+  .hero h2 {
+    font-size: 9.5px;
+  }
+
+  .hero img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .about {
+    height: 700px;
+  }
+
+  .about_text {
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto;
+  }
+
+  .about_text p {
+    font-size: 13px;
+  }
+
+  .skills_text {
+    margin: 0 auto;
+  }
+
+  .skill_graph_c {
+    width: 100px;
+    height: 100px;
+  }
+
+  .skill_graph_java {
+    width: 100px;
+    height: 100px;
+  }
+
+  .skill_graph_html {
+    width: 100px;
+    height: 100px;
+  }
+
+  .skill_graph_js {
+    width: 100px;
+    height: 100px;
+  }
+
+  .skill_graph_sql {
+    width: 100px;
+    height: 100px;
+  }
+  .skill_graph_css {
+    width: 100px;
+    height: 100px;
+  }
+
+  .skill_graph_php {
+    width: 100px;
+    height: 100px;
+  }
+
+  .portfolio {
+    height: 950px;
+  }
+
+  .card_container {
+    justify-content: center;
+  }
+
+  .card_front {
+    width: 80%;
+    margin: 20px 0;
+  }
+
+  .footer {
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+    margin: 0;
+  }
+
+  .footer i {
+    margin-bottom: 10px;
+  }
 }
