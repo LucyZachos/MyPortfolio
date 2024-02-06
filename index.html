@@ -29,7 +29,7 @@
             <li><a href="#about">About Me</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
-            <li><a id="contact" href="contact.php">Contact Me</a></li>
+            <li><a id="contact" data-modal-target="#contactModal">Contact Me</a></li>
         </ul>
     </div>
 
@@ -46,6 +46,21 @@
             </div>
         </div>
     </section>
+
+    <!-- Add this code before the closing </body> tag -->
+<div class="modal" id="contactModal">
+    <div class="modal_header">
+        <h3>Contact Me</h3>
+        <button data-close-button class="close_btn">&times;</button>
+    </div>
+    <div class="modal_body">
+        <p>Email: <a href="mailto:lucindazachos@gmail.com">lucindazachos@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/lucindazachos" target="_blank">https://www.linkedin.com/in/lucindazachos</a></p>
+        <p>Github: <a href="https://github.com/LucyZachos" target="_blank">https://github.com/LucyZachos</a></p>
+    </div>
+</div>
+<div id="overlay"></div>
+
 
     <section id="about">
         <div class="about">

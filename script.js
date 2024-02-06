@@ -1,6 +1,8 @@
 const openModalButtons = document.querySelectorAll('[data-modal-target]');
 const closeModalButtons = document.querySelectorAll('[data-close-button]');
 const overlay = document.getElementById('overlay');
+const contactLink = document.getElementById('contact');
+const contactModal = document.getElementById('contactModal');
 
 openModalButtons.forEach(button => {
     button.addEventListener('click', () => {
@@ -12,6 +14,17 @@ openModalButtons.forEach(button => {
 closeModalButtons.forEach(button => {
     button.addEventListener('click', () => {
         const modal = button.closest('.modal');
+        closeModal(modal);
+    });
+});
+
+contactLink.addEventListener('click', () => {
+    openModal(contactModal);
+});
+
+overlay.addEventListener('click', () => {
+    const modals = document.querySelectorAll('.modal.active');
+    modals.forEach(modal => {
         closeModal(modal);
     });
 });
