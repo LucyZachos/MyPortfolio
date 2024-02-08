@@ -705,6 +705,9 @@ button {
   text-decoration: none;
   color: blue;
 }
+.mobile_menu {
+  display: none;
+}
 
 @media screen and (max-width: 1280px) {
   body {
