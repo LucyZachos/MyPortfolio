@@ -687,6 +687,7 @@ button {
 
 /*#endregion portfolio*/
 
+/*#region Footer*/
 .footer {
   display: flex;
   height: 80px;
@@ -702,6 +703,8 @@ button {
   color: #c2d3e1;
 }
 
+/*#endregion Footer*/
+
 #contactModal .modal_body a {
   text-decoration: none;
   color: blue;
@@ -709,6 +712,8 @@ button {
 .mobile_menu {
   display: none;
 }
+
+/*#region Media Controls*/
 
 @media screen and (max-width: 1280px) {
   body {
@@ -1267,6 +1272,20 @@ button {
     display: block;
   }
 
+  .navbar a:hover {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .navbar a:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #c2d3e1;
+  }
+
   .navbar li a:hover {
     background-color: transparent;
     border-radius: 0;
@@ -1429,6 +1448,19 @@ button {
     padding: 0;
   }
 
+  .navbar a:hover {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .navbar a:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #c2d3e1;
+  }
   .navbar li a:hover::after {
     content: "";
     display: block;
@@ -1583,6 +1615,19 @@ button {
     display: none;
   }
 
+  .navbar a:hover {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .navbar a:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #c2d3e1;
+  }
   .navbar li a:hover {
     background-color: transparent;
     border-radius: 0;
@@ -1735,6 +1780,21 @@ button {
   .navbar li {
     padding: 0 5px;
   }
+
+  .navbar a:hover {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .navbar a:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #c2d3e1;
+  }
+
   .mobile_menu {
     display: block;
   }
@@ -1898,6 +1958,20 @@ button {
   .navbar li {
     padding: 0 10px;
     font-size: 10px;
+  }
+
+  .navbar a:hover {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .navbar a:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #c2d3e1;
   }
 
   .navbar li a {
@@ -2077,6 +2151,20 @@ button {
     font-size: 10px;
   }
 
+  .navbar a:hover {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .navbar a:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #c2d3e1;
+  }
+
   .navbar li a {
     font-size: 12px;
   }
@@ -2238,3 +2326,5 @@ button {
     font-size: 10px;
   }
 }
+
+/*#endregion Media Controls*/
