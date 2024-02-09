@@ -1300,7 +1300,7 @@ button {
     background-color: #c2d3e1;
   }
 
-  .download-link {
+  .download-link:hover {
     background-color: transparent;
     border-radius: 0;
     padding: 0;
@@ -1469,7 +1469,7 @@ button {
     background-color: #c2d3e1;
   }
 
-  .download-link {
+  .download-link:hover {
     background-color: transparent;
     border-radius: 0;
     padding: 0;
@@ -1642,7 +1642,7 @@ button {
     background-color: #c2d3e1;
   }
 
-  .download-link {
+  .download-link:hover {
     background-color: transparent;
     border-radius: 0;
     padding: 0;
@@ -1817,7 +1817,7 @@ button {
     background-color: #c2d3e1;
   }
 
-  .download-link {
+  .download-link:hover {
     background-color: transparent;
     border-radius: 0;
     padding: 0;
@@ -2008,7 +2008,7 @@ button {
     background-color: #c2d3e1;
   }
 
-  .download-link {
+  .download-link:hover {
     background-color: transparent;
     border-radius: 0;
     padding: 0;
@@ -2199,7 +2199,7 @@ button {
     background-color: #c2d3e1;
   }
 
-  .download-link {
+  .download-link:hover {
     background-color: transparent;
     border-radius: 0;
     padding: 0;
