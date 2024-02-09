@@ -27,6 +27,7 @@ body {
   color: #000;
   margin: 0;
   box-sizing: border-box;
+  min-width: 360px;
 }
 
 img {
@@ -714,10 +715,6 @@ button {
     padding-top: 100px;
   }
 
-  .mobile_menu {
-    display: none;
-  }
-
   .navbar {
     padding: 0 10px;
   }
@@ -827,7 +824,7 @@ button {
   }
 
   .hero h2 {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .hero img {
@@ -871,6 +868,127 @@ button {
     text-align: center;
     padding-top: 20px;
     margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .footer i {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  body {
+    padding-top: 10px;
+  }
+
+  .navbar {
+    padding: 0 0px;
+    justify-content: space-between;
+  }
+
+  .navbar li {
+    padding: 0 10px;
+  }
+
+  .navbar .logo {
+    padding-right: 0px;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .hero h1 {
+    font-size: 25px;
+  }
+
+  .hero h2 {
+    font-size: 20px;
+  }
+
+  .hero img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .about {
+    height: 700px;
+  }
+
+  .about_text {
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto;
+  }
+
+  .about_text p {
+    font-size: 18px;
+  }
+
+  .skills_text {
+    margin: 0 auto;
+  }
+
+  .skill_graph_c {
+    width: 120px;
+    height: 120px;
+  }
+
+  .skill_graph_java {
+    width: 120px;
+    height: 120px;
+  }
+
+  .skill_graph_html {
+    width: 120px;
+    height: 120px;
+  }
+
+  .skill_graph_js {
+    width: 120px;
+    height: 120px;
+  }
+
+  .skill_graph_sql {
+    width: 120px;
+    height: 120px;
+  }
+  .skill_graph_css {
+    width: 120px;
+    height: 120px;
+  }
+
+  .skill_graph_php {
+    width: 120px;
+    height: 120px;
+  }
+
+  .portfolio {
+    height: 950px;
+  }
+
+  .card_container {
+    justify-content: center;
+  }
+
+  .card_front {
+    width: 80%;
+    margin: 20px 0;
+  }
+
+  .footer {
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+    margin: 0;
+    margin-bottom: 30px;
   }
 
   .footer i {
@@ -884,11 +1002,11 @@ button {
   }
 
   .navbar {
-    padding: 0 5px;
+    padding: 0px;
   }
 
   .navbar li {
-    padding: 0 10px;
+    padding: 0 5px;
   }
 
   .navbar .logo {
@@ -903,13 +1021,11 @@ button {
   }
 
   .hero h1 {
-    font-size: 18px;
+    font-size: 25px;
   }
 
   .hero h2 {
-    font-size: 12px;
-    /* text-align: center;
-    word-wrap: break-word; */
+    font-size: 18px;
   }
 
   .hero img {
@@ -930,7 +1046,7 @@ button {
   }
 
   .about_text p {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .skills_text {
@@ -991,6 +1107,7 @@ button {
     text-align: center;
     padding-top: 20px;
     margin: 0;
+    margin-bottom: 30px;
   }
 
   .footer i {
@@ -1004,17 +1121,24 @@ button {
   }
 
   .navbar {
-    padding: 0 5px;
+    padding: 5px;
   }
 
   .navbar li {
-    padding: 0 10px;
+    padding: 0 15px;
   }
 
   .navbar .logo {
     padding-right: 0px;
   }
 
+  .desktop_menu {
+    display: none;
+  }
+
+  .mobile_menu {
+    display: block;
+  }
   .hero {
     flex-direction: column;
     align-items: center;
@@ -1028,8 +1152,6 @@ button {
 
   .hero h2 {
     font-size: 15px;
-    /* text-align: center;
-    word-wrap: break-word; */
   }
 
   .hero img {
@@ -1111,19 +1233,22 @@ button {
     text-align: center;
     padding-top: 20px;
     margin: 0;
+    margin-bottom: 30px;
   }
 
   .footer i {
     margin-bottom: 10px;
   }
 }
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 540px) {
   body {
-    padding-top: 50px;
+    padding-top: 10px;
   }
 
   .navbar {
-    padding: 0 5px;
+    padding: 0 0px;
+    justify-content: space-between;
   }
 
   .navbar li {
@@ -1132,6 +1257,47 @@ button {
 
   .navbar .logo {
     padding-right: 0px;
+  }
+
+  .desktop_menu {
+    display: none;
+  }
+
+  .mobile_menu {
+    display: block;
+  }
+
+  .navbar li a:hover {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .navbar li a:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #c2d3e1;
+  }
+
+  .download-link {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+  }
+  .download-link:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #c2d3e1;
+  }
+
+  .modal {
+    width: 90%;
+    max-width: 100%;
+    word-wrap: break-word;
   }
 
   .hero {
@@ -1147,8 +1313,6 @@ button {
 
   .hero h2 {
     font-size: 12px;
-    /* text-align: center;
-    word-wrap: break-word; */
   }
 
   .hero img {
@@ -1229,7 +1393,7 @@ button {
     justify-content: center;
     text-align: center;
     padding-top: 20px;
-    margin: 0;
+    margin-bottom: 20px;
   }
 
   .footer i {
@@ -1291,6 +1455,7 @@ button {
     max-width: 100%;
     word-wrap: break-word;
   }
+
   .hero {
     flex-direction: column;
     align-items: center;
@@ -1388,6 +1553,7 @@ button {
     text-align: center;
     padding-top: 20px;
     margin: 0;
+    margin-bottom: 30px;
   }
 
   .footer i {
@@ -1395,24 +1561,66 @@ button {
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 430px) {
   body {
-    padding-top: 50px;
+    padding-top: 100px;
   }
 
   .navbar {
-    padding: 0 5px;
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
   }
 
   .navbar li {
-    padding: 0 10px;
+    padding: 0 5px;
+  }
+  .mobile_menu {
+    display: block;
+  }
+
+  .desktop_menu {
+    display: none;
+  }
+
+  .navbar li a:hover {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .navbar li a:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #c2d3e1;
+  }
+
+  .download-link {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+  }
+  .download-link:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #c2d3e1;
+  }
+
+  .modal {
+    width: 90%;
+    max-width: 100%;
+    word-wrap: break-word;
   }
 
   .hero {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
   }
   .header_text {
     padding-top: 0;
@@ -1423,17 +1631,18 @@ button {
   }
 
   .hero h2 {
-    font-size: 8px;
+    font-size: 9.5px;
   }
 
   .hero img {
     width: 100%;
-    max-width: 320px;
+    max-width: 300px;
     height: auto;
     margin-bottom: 20px;
   }
+
   .about {
-    height: 750px;
+    height: 700px;
   }
 
   .about_text {
@@ -1485,6 +1694,342 @@ button {
   }
 
   .portfolio {
+    height: 950px;
+  }
+
+  .card_container {
+    justify-content: center;
+  }
+
+  .card_front {
+    width: 80%;
+    margin: 20px 0;
+  }
+
+  .footer {
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .footer i {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  body {
+    padding-top: 100px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+  }
+
+  .navbar li {
+    padding: 0 5px;
+  }
+  .mobile_menu {
+    display: block;
+  }
+
+  .desktop_menu {
+    display: none;
+  }
+
+  .navbar li a:hover {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .navbar li a:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #c2d3e1;
+  }
+
+  .download-link {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+  }
+  .download-link:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #c2d3e1;
+  }
+
+  .modal {
+    width: 90%;
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .header_text {
+    padding-top: 0;
+  }
+
+  .hero h1 {
+    font-size: 18px;
+  }
+  .typed h2 {
+    font-size: 9px;
+  }
+
+  .hero img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .about {
+    height: 720px;
+  }
+
+  .about_text {
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto;
+  }
+
+  .about_text p {
+    font-size: 13px;
+  }
+
+  .skills_text {
+    margin: 0 auto;
+  }
+
+  .skill_graph_c {
+    width: 100px;
+    height: 100px;
+  }
+
+  .skill_graph_java {
+    width: 100px;
+    height: 100px;
+  }
+
+  .skill_graph_html {
+    width: 100px;
+    height: 100px;
+  }
+
+  .skill_graph_js {
+    width: 100px;
+    height: 100px;
+  }
+
+  .skill_graph_sql {
+    width: 100px;
+    height: 100px;
+  }
+  .skill_graph_css {
+    width: 100px;
+    height: 100px;
+  }
+
+  .skill_graph_php {
+    width: 100px;
+    height: 100px;
+  }
+
+  .portfolio {
+    height: 950px;
+  }
+
+  .card_container {
+    justify-content: center;
+  }
+
+  .card_front {
+    width: 80%;
+    margin: 20px 0;
+  }
+
+  .footer {
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .footer i {
+    margin-bottom: 10px;
+  }
+
+  .footer label {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    padding-top: 50px;
+  }
+
+  .navbar {
+    padding: 0 0px;
+    justify-content: space-between;
+  }
+
+  .navbar li {
+    padding: 0 10px;
+    font-size: 10px;
+  }
+
+  .navbar li a {
+    font-size: 12px;
+  }
+
+  .navbar a {
+    font-size: 12px;
+  }
+
+  .navbar .logo {
+    padding-right: 0px;
+  }
+
+  .desktop_menu {
+    display: none;
+  }
+
+  .mobile_menu {
+    display: block;
+  }
+
+  .navbar li a:hover {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .navbar li a:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #c2d3e1;
+  }
+
+  .download-link {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+  }
+  .download-link:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #c2d3e1;
+  }
+
+  .modal {
+    width: 90%;
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+  }
+  .header_text {
+    padding-top: 0;
+  }
+
+  .hero h1 {
+    font-size: 18px;
+  }
+
+  .hero h2 {
+    font-size: 8.5px;
+  }
+
+  .hero img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .about {
+    height: 750px;
+  }
+
+  .about_text {
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto;
+  }
+
+  .about_text p {
+    font-size: 13px;
+  }
+
+  .skills_text {
+    margin: 0 auto;
+  }
+
+  .skill_graph_c {
+    width: 90px;
+    height: 90px;
+  }
+
+  .skill_graph_java {
+    width: 90px;
+    height: 90px;
+  }
+
+  .skill_graph_html {
+    width: 90px;
+    height: 100px;
+  }
+
+  .skill_graph_js {
+    width: 100px;
+    height: 90px;
+  }
+
+  .skill_graph_sql {
+    width: 90px;
+    height: 100px;
+  }
+  .skill_graph_css {
+    width: 90px;
+    height: 90px;
+  }
+
+  .skill_graph_php {
+    width: 90px;
+    height: 90px;
+  }
+
+  .portfolio {
     height: 1000px;
   }
 
@@ -1504,7 +2049,185 @@ button {
     text-align: center;
     padding-top: 30px;
     margin: 0;
-    padding-bottom: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .footer i {
+    margin-bottom: 10px;
+  }
+
+  .footer label {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  body {
+    padding-top: 50px;
+  }
+
+  .navbar {
+    padding: 0 0px;
+    justify-content: space-between;
+  }
+
+  .navbar li {
+    padding: 0 10px;
+    font-size: 10px;
+  }
+
+  .navbar li a {
+    font-size: 12px;
+  }
+
+  .navbar a {
+    font-size: 12px;
+  }
+
+  .navbar .logo {
+    padding-right: 0px;
+  }
+
+  .desktop_menu {
+    display: none;
+  }
+
+  .mobile_menu {
+    display: block;
+  }
+
+  .navbar li a:hover {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .navbar li a:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #c2d3e1;
+  }
+
+  .download-link {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+  }
+  .download-link:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #c2d3e1;
+  }
+
+  .modal {
+    width: 90%;
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+  }
+  .header_text {
+    padding-top: 0;
+  }
+
+  .hero h1 {
+    font-size: 18px;
+  }
+
+  .hero h2 {
+    font-size: 8px;
+  }
+
+  .hero img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .about {
+    height: 750px;
+  }
+
+  .about_text {
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto;
+  }
+
+  .about_text p {
+    font-size: 13px;
+  }
+
+  .skills_text {
+    margin: 0 auto;
+  }
+
+  .skill_graph_c {
+    width: 90px;
+    height: 90px;
+  }
+
+  .skill_graph_java {
+    width: 90px;
+    height: 90px;
+  }
+
+  .skill_graph_html {
+    width: 90px;
+    height: 100px;
+  }
+
+  .skill_graph_js {
+    width: 100px;
+    height: 90px;
+  }
+
+  .skill_graph_sql {
+    width: 90px;
+    height: 100px;
+  }
+  .skill_graph_css {
+    width: 90px;
+    height: 90px;
+  }
+
+  .skill_graph_php {
+    width: 90px;
+    height: 90px;
+  }
+
+  .portfolio {
+    height: 1000px;
+  }
+
+  .card_container {
+    justify-content: center;
+  }
+
+  .card_front {
+    width: 80%;
+    margin: 20px 0;
+  }
+
+  .footer {
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+    margin: 0;
+    padding: 10px;
+    margin-bottom: 30px;
   }
 
   .footer i {
@@ -1512,6 +2235,6 @@ button {
   }
 
   .footer label {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
