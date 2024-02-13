@@ -596,6 +596,7 @@ button {
 
 .card_content {
   padding: 16px;
+  text-align: center;
 }
 
 .card_content h3 {
