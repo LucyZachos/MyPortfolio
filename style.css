@@ -801,6 +801,88 @@ button {
     margin-bottom: 10px;
   }
 }
+@media screen and (max-width: 1200px) {
+  body {
+    padding-top: 100px;
+  }
+
+  .navbar {
+    padding: 0 10px;
+  }
+
+  .mobile_menu {
+    display: none;
+  }
+  .navbar li {
+    padding: 0 20px;
+  }
+
+  .navbar .logo {
+    padding-right: 350px;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero h2 {
+    font-size: 18px;
+  }
+
+  .hero img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .about {
+    height: 800px;
+  }
+
+  .about_text {
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto;
+  }
+
+  .skills_text {
+    margin: 0 auto;
+  }
+
+  .portfolio {
+    height: 950px;
+  }
+
+  .card_container {
+    justify-content: center;
+  }
+
+  .card_front {
+    width: 80%;
+    margin: 20px 0;
+  }
+
+  .footer {
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+    margin: 0;
+  }
+
+  .footer i {
+    margin-bottom: 10px;
+  }
+}
 
 @media screen and (max-width: 1024px) {
   body {
