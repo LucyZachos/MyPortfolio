@@ -1,12 +1,12 @@
-# MyPortfolio
+# MyPortfolio 💼
 
 First portfolio project - 2024
 
-## Description
+## Description ℹ️
 
 MyPortfolio is my first portfolio project, developed as part of my journey into web development. This project showcases my skills, experience, and projects in a visually appealing and informative manner. Below, you'll find an overview of the project structure and key features.
 
-## Features
+## Features 🚀
 
 - **Navigation Bar**: Easy access to different sections of the portfolio.
 - **Download CV**: Users can download my CV directly from the navigation bar.
@@ -16,15 +16,16 @@ MyPortfolio is my first portfolio project, developed as part of my journey into 
 - **Portfolio Section**: Showcase of my projects with brief descriptions and GitHub links.
 - **Contact Me Section**: Provides contact details and links to my LinkedIn and GitHub profiles.
 
-## Project Structure
+## Project Structure 📂
 
 - **HTML Files**: Contains the structure and content of each section.
 - **CSS Files**: Defines the styling and layout of the portfolio.
 - **JavaScript File**: Handles interactive elements such as modals and navigation behavior.
 - **Images**: Includes images used in the portfolio, such as profile pictures and project screenshots.
 
-## Contact
+## Contact 📧
 
 - Email: [lucindazachos@gmail.com](mailto:lucindazachos@gmail.com)
 - LinkedIn: [https://www.linkedin.com/in/lucindazachos](https://www.linkedin.com/in/lucindazachos)
 - GitHub: [https://github.com/LucyZachos](https://github.com/LucyZachos)
+
